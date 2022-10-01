@@ -1,4 +1,4 @@
-NAME	= 	megaphone
+NAME	= 	PhoneBook
 
 COMPILER = c++
 

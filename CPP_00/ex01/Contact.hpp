@@ -2,17 +2,18 @@
 # define CONTACT_HPP
 
 # include <string>
+// # include <iostream>
 
 class Contact {
     public:
         Contact(void);
         ~Contact(void);
-        void    setFirtsName1(std :: string name);
-        // void    setFirtsName (std :: istream& in);
-        void    setLastName(std :: string last_name);
-        void    setSecret(std :: string secret);
-        void    setNick(std :: string nick);
+        void    setFirtsNameStr(std :: string name);
+        void    setLastNameStr(std :: string last_name);
+        void    setSecretStr(std :: string secret);
+        void    setNickStr(std :: string nick);
         void    setNumber(long long num);
+        // void    setFirtsName (std :: istream& in);
         std :: string   getFirtsName(void) const;
         std :: string   getLastName(void) const;
         std :: string   getSecret(void) const;
