@@ -16,5 +16,10 @@ int main() {
 		jim.attack();
 		club->setType("some other type of club");
 		jim.attack();
+		delete club;;
+	}
+	{
+	HumanB kim("Kim");
+	kim.attack();
 	}
 return 0; }
