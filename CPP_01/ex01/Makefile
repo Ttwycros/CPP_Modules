@@ -4,9 +4,8 @@ COMPILER = c++
 
 FLAGS	= 	-Wall -Werror -Wextra -std=c++98
 
-SRC =	randomChump.cpp \
-		Zombie.cpp \
-		newZombie.cpp \
+SRC =	Zombie.cpp \
+		zombieHorde.cpp \
 		main.cpp \
 
 INC	=	Zombie.hpp \
