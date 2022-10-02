@@ -1,12 +1,17 @@
-NAME	= 	Pointer
+NAME	= 	Violence
 
 COMPILER = c++
 
 FLAGS	= 	-Wall -Werror -Wextra -std=c++98
 
 SRC =	main.cpp \
+		Weapon.cpp \
+		HumanA.cpp \
+		HumanB.cpp \
 
-INC	=	\
+INC	=	Weapon.hpp \
+		HumanA.hpp \
+		HumanB.hpp \
 
 OBJ		= 	$(SRC:.cpp=.o)
 
