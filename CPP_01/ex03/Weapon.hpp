@@ -14,6 +14,7 @@ class Weapon {
         ~Weapon(void);
         const std :: string	&getType(void) const;
         void setType(std :: string type);
+        Weapon &operator=(const Weapon& op);
     private:
         std :: string   _type;   
 };
