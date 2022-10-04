@@ -8,12 +8,18 @@
 
 class Harl {
     public:
-        static void    complain(std::string level);
+        Harl();
+        ~Harl();
+        void    complain(std::string level);
     private:
-        static void    debug( void );
-        static void    info( void );
-        static void    warning( void );
-        static void    error( void );
+        void    debug( void );
+        void    info( void );
+        void    warning( void );
+        void    error( void );
+        std :: string _debub;
+        std :: string _info;
+        std :: string _warr;
+        std :: string _err;
 };
 
 #endif
