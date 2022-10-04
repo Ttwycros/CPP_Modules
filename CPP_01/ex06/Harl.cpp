@@ -29,7 +29,7 @@ void Harl :: setComplainLvl(std :: string complain_lvl)
 	switch (i) {
 		case 4:
 			std :: cerr << "[ Probably complaining about insignificant problems ]" << std :: endl;
-			this->complain_lvl_threshold = "Silence";
+			this->complain_lvl_threshold = "silence";
 			break ;
 		default:
 			this->complain_lvl_threshold = complain_lvl;
@@ -49,7 +49,6 @@ void	Harl :: complain(std :: string level) {
 	for (; i < size && this->_complainLevels[i] != level; i++);
 	switch (i) {
 		case 4:
-			// std :: cerr << "No such level" << std :: endl;
 			break ;
 		default:
 			(this->*forComlain[i])();
