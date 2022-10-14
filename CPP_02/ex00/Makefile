@@ -1,5 +1,4 @@
-NAME	= 	harlFilter
-
+NAME	= 	Fixed
 COMPILER = c++
 
 FLAGS	= 	-Wall -Werror -Wextra -std=c++98
