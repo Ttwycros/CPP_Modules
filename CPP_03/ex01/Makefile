@@ -1,4 +1,4 @@
-NAME	= 	ClapTrap
+NAME	= 	ScavTrap
 
 COMPILER = c++
 
@@ -6,8 +6,10 @@ FLAGS	= 	-Wall -Werror -Wextra -std=c++98
 
 SRC =	main.cpp \
 		ClapTrap.cpp \
+		ScavTrap.cpp \
 
 INC	=	ClapTrap.hpp \
+		ScavTrap.hpp \
 
 OBJ		= 	$(SRC:.cpp=.o)
 

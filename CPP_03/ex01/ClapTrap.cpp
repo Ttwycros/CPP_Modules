@@ -5,6 +5,12 @@ ClapTrap :: ClapTrap(void) : hitpoints(10), energy(10), attackDamage(0)
 	std :: cout << "ClapTrap: Default constructor called" << std :: endl;
 }
 
+ClapTrap :: ClapTrap(std::string _name, unsigned int _hitPoints, unsigned int _energyPoints, unsigned int _attackDamage) :
+	name(_name), hitpoints(_hitPoints), energy(_energyPoints), attackDamage(_attackDamage)
+{
+	std::cout << "ClapTrap Param2 constructor" << std::endl;
+}
+
 ClapTrap :: ClapTrap(std :: string _name) : hitpoints(10), energy(10), attackDamage(0), name(_name)
 {
 	std :: cout << "ClapTrap: Initialisaion constructor called" << std :: endl;
