@@ -2,18 +2,11 @@
 
 ScavTrap :: ScavTrap(void): ClapTrap("", 100, 50, 20)
 {
-	// hitpoints = 100;
-	// energy = 50;
-	// attackDamage = 20;
 	std :: cout << "ScavTrap: Default constructor called" << std :: endl;
 }
 
 ScavTrap :: ScavTrap(std :: string _name): ClapTrap(_name, 100, 50, 20)
 {
-	// name = _name;
-	// hitpoints = 100;
-	// energy = 50;
-	// attackDamage = 20;
 	std :: cout << "ScavTrap: Initialisaion constructor called" << std :: endl;
 }
 

@@ -20,7 +20,6 @@ class ClapTrap {
 		unsigned int	getHitpoints(void) const;
 		unsigned int	getEnergy(void) const;
 		unsigned int	getAttacDamage(void) const;
-		unsigned int	lastDamage(void) const;
 		std :: string	getName(void) const;
 	private:
 		unsigned int	hitpoints;

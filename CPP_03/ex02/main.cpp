@@ -1,4 +1,5 @@
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int	main(void)
 {
@@ -15,6 +16,21 @@ int	main(void)
 		anotherScav.takeDamage(30);
 		std :: cout << anotherScav.getHitpoints() << std :: endl;
 		anotherScav.beRepaired(5);
+	}
+	std :: cout << "------------------------------------------" << std ::endl;
+	{
+		FragTrap flag("Flag");
+		FragTrap anotherFlag;
+
+		flag.highFiveGuys();
+		flag.attack("Scav");
+		flag.takeDamage(25);
+		std :: cout << flag.getHitpoints() << std :: endl;
+		flag.beRepaired(3);
+		anotherFlag = flag;
+		anotherFlag.takeDamage(30);
+		std :: cout << anotherFlag.getHitpoints() << std :: endl;
+		anotherFlag.beRepaired(5);
 	}
 	std :: cout << "------------------------------------------" << std ::endl;
 	{
