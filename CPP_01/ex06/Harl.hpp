@@ -24,5 +24,5 @@ class Harl {
         std :: string complain_lvl_threshold;
         std :: string _complainLevels[4];
 };
-//static const 
+
 #endif
