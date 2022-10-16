@@ -22,5 +22,5 @@ Dog	&Dog :: operator=(const Dog &other) {
 }
 
 void	Dog :: makeSound(void) const {
-	std :: cout << "Wwwwwwaaaffffff...." << std :: endl;
+	std :: cout << "The dogs are more frendly in general, but watch you back, you\'ll never know what the dog i am...." << std :: endl;
 }

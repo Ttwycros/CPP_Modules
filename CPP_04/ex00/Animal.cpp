@@ -25,5 +25,5 @@ std :: string	Animal :: getType(void) const {
 }
 
 void	Animal :: makeSound(void) const {
-	std :: cout << "I do not know what the Animal is I, so I do not have unique sound :(" << std :: endl;
+	std :: cout << "I do not know what the Animal is I, and so do you, don't know what caused that bug last friday" << std :: endl;
 }
