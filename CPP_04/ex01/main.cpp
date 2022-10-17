@@ -22,9 +22,8 @@ int main(void) {
 	std :: cout << "Idea of No.6 is to " << dynamic_cast<Cat *>(animals[6])->getBrain()->ideas[4] << std :: endl;
 	*dynamic_cast<Cat *>(animals[7]) = *dynamic_cast<Cat *>(animals[6]);
 	std :: cout << "Now No.7 is a copyСat of No.6 and his idea is " << dynamic_cast<Cat *>(animals[7])->getBrain()->ideas[4] << std :: endl;
-	std :: cout << "And finally our patiens No.10, he is, how do i say this \'special\'" << std :: endl;
+	std :: cout << "And finally our patiens No.10, he is, how do i say this, \'special\'" << std :: endl;
 	std :: cout << "this if his thoughts -> \""<<dynamic_cast<Cat *>(animals[9])->getBrain()->ideas[0] << "\" As you can see, his brain is not burdened with such concepts as thoughts or ideas." << std :: endl;
-	
 	for (int i = 0; i < 10; i++)
 		delete animals[i];
 	return 0;
