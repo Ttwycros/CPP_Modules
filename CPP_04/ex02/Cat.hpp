@@ -13,8 +13,8 @@ class Cat: public Animal {
 		~Cat(void);
 		virtual Animal	&operator=(const Animal	&other);
 		Cat	&operator=(const Cat	&other);
-		void	makeSound(void) const;
-		Brain	*getBrain(void) const;
+		virtual void	makeSound(void) const;
+		virtual Brain	*getBrain(void) const;
 	private:
 		Brain *brain;
 };

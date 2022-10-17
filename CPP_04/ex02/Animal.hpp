@@ -10,10 +10,10 @@
 class Animal {
 	public:
 		virtual ~Animal(void);
-		virtual Animal	&operator=(const Animal	&other);
+		virtual Animal	&operator=(const Animal	&other) = 0;
 		std :: string	getType(void) const;
-		virtual void	makeSound(void) const;
-		virtual Brain	*getBrain(void) const;
+		virtual void	makeSound(void) const = 0;
+		virtual Brain	*getBrain(void) const = 0;
 	protected:
 		std :: string type;
 };

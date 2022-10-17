@@ -25,6 +25,17 @@ Cat	&Cat :: operator=(const Cat &other) {
 	return *this;
 }
 
+Animal	&Cat::operator=( Animal const &other )
+{
+	if (this != &other)
+	{
+		*brain = *other.getBrain();
+		type = other.getType();
+	}
+	std::cout << "Animal Asignature operator for Cat called" << std::endl;
+	return *this;
+}
+
 void	Cat :: makeSound(void) const {
 	std :: cout << "What are you looking at, huh? I'm a cat...." << std :: endl;
 }
