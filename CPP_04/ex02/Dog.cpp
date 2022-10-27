@@ -15,6 +15,17 @@ Dog :: ~Dog(void) {
 	std :: cout << "Dog: Destructor called" << std :: endl;
 }
 
+Animal	&Dog::operator=( Animal const &other )
+{
+	if (this != &other)
+	{
+		*brain = *other.getBrain();
+		type = other.getType();
+	}
+	std::cout << "Animal Asignature operator for Cat called" << std::endl;
+	return *this;
+}
+
 Dog	&Dog :: operator=(const Dog &other) {
 	if (this != &other)
 	{

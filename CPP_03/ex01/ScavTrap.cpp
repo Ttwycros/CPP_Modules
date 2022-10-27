@@ -31,10 +31,11 @@ ScavTrap :: ~ScavTrap(void)
 ScavTrap	&ScavTrap :: operator=(const ScavTrap	&other) {
 	std :: cout << "ScavTrap Assigment oerator called" << std :: endl;
 	if (this != &other) {
-		hitpoints = other.getHitpoints();
-		energy = other.getEnergy();
-		attackDamage = other.getAttacDamage();
-		name = other.getName();
+		ClapTrap::operator=(other);
+		// hitpoints = other.getHitpoints();
+		// energy = other.getEnergy();
+		// attackDamage = other.getAttacDamage();
+		// name = other.getName();
 	}
 	return (*this);
 }

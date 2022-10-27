@@ -9,8 +9,8 @@ int main(void) {
 		i < 5 ? animals[i] = new Dog() : animals[i] = new Cat();
 		std :: cout << "Number " << i + 1 << " is " <<  animals[i]->getType() << std :: endl;
 	}
-	std :: cout << "Now we carefully rip out the brains out of our Animan No.6, which is a Cat \nAnd we will place a couple of ideas in his bright head" << std :: endl;
-	brain = dynamic_cast<Cat *>(animals[6])->getBrain();
+	std :: cout << "Now we carefully rip out the brains out of our Animan No.4, which is a Dog \nAnd we will place a couple of ideas in his bright head" << std :: endl;
+	brain = animals[4]->getBrain();
 	brain->ideas[0] = "Try";
 	brain->ideas[1] = "Catch";
 	brain->ideas[2] = "SegError";

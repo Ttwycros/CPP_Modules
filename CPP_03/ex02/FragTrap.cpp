@@ -22,10 +22,11 @@ FragTrap :: ~FragTrap(void) {
 FragTrap	&FragTrap :: operator=(const FragTrap	&other) {
 	std :: cout << "FragTrap Assigment oerator called" << std :: endl;
 	if (this != &other) {
-		hitpoints = other.getHitpoints();
-		energy = other.getEnergy();
-		attackDamage = other.getAttacDamage();
-		name = other.getName();
+		ClapTrap::operator=(other);
+		// hitpoints = other.getHitpoints();
+		// energy = other.getEnergy();
+		// attackDamage = other.getAttacDamage();
+		// name = other.getName();
 	}
 	return (*this);
 }
