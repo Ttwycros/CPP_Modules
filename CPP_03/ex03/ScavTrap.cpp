@@ -21,16 +21,17 @@ ScavTrap :: ~ScavTrap(void)
 	std :: cout << "ScavTrap: Destructor called" << std :: endl;
 }
 
-// ScavTrap	&ScavTrap :: operator=(const ScavTrap	&other) {
-// 	std :: cout << "ScavTrap Assigment oerator called" << std :: endl;
-// 	if (this != &other) {
-// 		hitpoints = other.getHitpoints();
-// 		energy = other.getEnergy();
-// 		attackDamage = other.getAttacDamage();
-// 		name = other.getName();
-// 	}
-// 	return (*this);
-// }
+ScavTrap	&ScavTrap :: operator=(const ScavTrap	&other) {
+	std :: cout << "ScavTrap Assigment oerator called" << std :: endl;
+	if (this != &other) {
+		ClapTrap::operator=(other);
+		// hitpoints = other.getHitpoints();
+		// energy = other.getEnergy();
+		// attackDamage = other.getAttacDamage();
+		// name = other.getName();
+	}
+	return (*this);
+}
 
 void	ScavTrap :: attack(std :: string const	&target)
 { 

@@ -19,16 +19,17 @@ FragTrap :: ~FragTrap(void) {
 	std :: cout << "FragTrap: Destructor called" << std :: endl;
 }
 
-// FragTrap	&FragTrap :: operator=(const FragTrap	&other) {
-// 	std :: cout << "FragTrap Assigment oerator called" << std :: endl;
-// 	if (this != &other) {
-// 		hitpoints = other.getHitpoints();
-// 		energy = other.getEnergy();
-// 		attackDamage = other.getAttacDamage();
-// 		name = other.getName();
-// 	}
-// 	return (*this);
-// }
+FragTrap	&FragTrap :: operator=(const FragTrap	&other) {
+	std :: cout << "FragTrap Assigment oerator called" << std :: endl;
+	if (this != &other) {
+		ClapTrap::operator=(other);
+		// hitpoints = other.getHitpoints();
+		// energy = other.getEnergy();
+		// attackDamage = other.getAttacDamage();
+		// name = other.getName();
+	}
+	return (*this);
+}
 
 void	FragTrap :: highFiveGuys(void) {
 	std :: cout << "FragTrap: " << name << " HIGH FIVE Traps :)" << std :: endl;
