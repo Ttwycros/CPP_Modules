@@ -6,8 +6,13 @@
 int main(int, char**)
 {
     Array<int> numbers(MAX_VAL);
+    const Array<int> numbers1(MAX_VAL);
     int* mirror = new int[MAX_VAL];
     srand(time(NULL));
+
+    std:: cout << numbers1[1];
+
+
     for (int i = 0; i < MAX_VAL; i++)
     {
         const int value = rand();
