@@ -12,6 +12,7 @@ class Array {
 		~Array(void);
 		Array & operator=(const Array & other);
 		T & operator[](int i);
+		T & operator[](int i) const;
 		unsigned int	size(void) const;
 	private:
 		T				*array;
@@ -42,6 +43,14 @@ Array<T> :: ~Array(void) {
 
 template <class T>
 T & Array<T> :: operator[](int i) {
+	if (i < 0 || static_cast<unsigned int>(i) > n - 1)
+		throw std :: overflow_error("Out of range");
+	else
+		return array[i];
+}
+
+template <class T>
+T & Array<T> :: operator[](int i) const{
 	if (i < 0 || static_cast<unsigned int>(i) > n - 1)
 		throw std :: overflow_error("Out of range");
 	else
