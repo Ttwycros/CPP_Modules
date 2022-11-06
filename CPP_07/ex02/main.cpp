@@ -54,6 +54,17 @@ int main(int, char**)
     {
         numbers[i] = rand();
     }
-    delete [] mirror;//
+    delete [] mirror;
+    Array<int> test_numbers(0);
+    std :: cout << test_numbers.size() << std :: endl;
+    try
+    {
+        test_numbers[0] = 10;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+
     return 0;
 }

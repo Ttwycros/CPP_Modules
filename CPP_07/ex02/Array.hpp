@@ -24,7 +24,9 @@ Array<T> :: Array(void) : array(nullptr), n(0) {}
 
 template <class T>
 Array<T> :: Array(unsigned int _n) : n(_n) {
-	if (n > 0)
+	if (n == 0)
+		array = nullptr;
+	else if (n > 0)
 		array = new T[n];
 	else
 		throw std :: overflow_error("Out of range");
@@ -43,7 +45,7 @@ Array<T> :: ~Array(void) {
 
 template <class T>
 T & Array<T> :: operator[](int i) {
-	if (i < 0 || static_cast<unsigned int>(i) > n - 1)
+	if (i < 0 || static_cast<unsigned int>(i) > n - 1 || n == 0)
 		throw std :: overflow_error("Out of range");
 	else
 		return array[i];
@@ -51,7 +53,7 @@ T & Array<T> :: operator[](int i) {
 
 template <class T>
 T & Array<T> :: operator[](int i) const{
-	if (i < 0 || static_cast<unsigned int>(i) > n - 1)
+	if (i < 0 || static_cast<unsigned int>(i) > n - 1 || n == 0)
 		throw std :: overflow_error("Out of range");
 	else
 		return array[i];
